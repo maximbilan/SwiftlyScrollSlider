@@ -12,6 +12,7 @@
 		94128C7A1D0BDFA000FA7BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94128C781D0BDFA000FA7BB9 /* Main.storyboard */; };
 		94128C7C1D0BDFA000FA7BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94128C7B1D0BDFA000FA7BB9 /* Assets.xcassets */; };
 		94128C7F1D0BDFA000FA7BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94128C7D1D0BDFA000FA7BB9 /* LaunchScreen.storyboard */; };
+		94128C881D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94128C871D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		94128C7B1D0BDFA000FA7BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94128C7E1D0BDFA000FA7BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94128C801D0BDFA000FA7BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94128C871D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftlyScrollSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		94128C731D0BDFA000FA7BB9 /* SwiftlyScrollSlider */ = {
 			isa = PBXGroup;
 			children = (
+				94128C861D0BE02300FA7BB9 /* Sources */,
 				94128C741D0BDFA000FA7BB9 /* AppDelegate.swift */,
 				94128C761D0BDFA000FA7BB9 /* ViewController.swift */,
 				94128C781D0BDFA000FA7BB9 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				94128C801D0BDFA000FA7BB9 /* Info.plist */,
 			);
 			path = SwiftlyScrollSlider;
+			sourceTree = "<group>";
+		};
+		94128C861D0BE02300FA7BB9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				94128C871D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				94128C771D0BDFA000FA7BB9 /* ViewController.swift in Sources */,
 				94128C751D0BDFA000FA7BB9 /* AppDelegate.swift in Sources */,
+				94128C881D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +300,7 @@
 				94128C851D0BDFA000FA7BB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
