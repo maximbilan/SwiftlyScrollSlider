@@ -17,6 +17,8 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		scrollSlider.thumbImageView?.image = UIImage(named: "ScrollSlider1")
+		//scrollSlider.lineBackgroundView?.backgroundColor = UIColor.yellowColor()
+		//scrollSlider.lineBackgroundView?.layer.borderColor = UIColor.yellowColor().CGColor
 	}
 
 }
