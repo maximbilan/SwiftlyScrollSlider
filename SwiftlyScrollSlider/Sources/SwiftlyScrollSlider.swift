@@ -16,7 +16,7 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 		}
 	}
 	
-	private var thumbImageView: UIImageView?
+	public var thumbImageView: UIImageView?
 	private var thumbScrollView: UIScrollView?
 	private var lineBackgroundView: UIView?
 	private var sourceContentOffsetUpdatesCount = 0
