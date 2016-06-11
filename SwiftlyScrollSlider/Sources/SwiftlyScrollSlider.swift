@@ -35,12 +35,6 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 		setupView()
 	}
 	
-//	public override func awakeFromNib() {
-//		super.awakeFromNib()
-//		
-//		setupView()
-//	}
-	
 	func setupView() {
 		
 		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider"))
