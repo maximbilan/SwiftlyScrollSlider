@@ -10,20 +10,22 @@ import UIKit
 
 public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 	
-	@IBOutlet weak var scrollView: UIScrollView!
-	
-	private var thumbImageView: UIImageView?
-	private var thumbScrollView: UIScrollView? {
+	@IBOutlet weak var scrollView: UIScrollView! {
 		didSet {
 			scrollViewContentDidChange()
 		}
 	}
+	
+	private var thumbImageView: UIImageView?
+	private var thumbScrollView: UIScrollView?
 	private var sourceContentOffsetUpdatesCount = 0
 	private var thumbContentOffsetUpdatesCount = 0
 	private var thumbHeight = 0
 	
 	required public init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+		super.init(coder: aDecoder)
+		
+		setupView()
 	}
 	
 	override init(frame: CGRect) {
@@ -32,15 +34,15 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 		setupView()
 	}
 	
-	public override func awakeFromNib() {
-		super.awakeFromNib()
-		
-		setupView()
-	}
+//	public override func awakeFromNib() {
+//		super.awakeFromNib()
+//		
+//		setupView()
+//	}
 	
 	func setupView() {
 		
-		thumbImageView = UIImageView(image: UIImage(named: ""))
+		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider"))
 		thumbImageView?.contentMode = .Center
 		addSubview(thumbImageView!)
 		
