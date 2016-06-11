@@ -116,11 +116,48 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 	}
 	
 	func updateSourceContentOffset() {
-		
+		var targetHeight: CGFloat = thumbScrollView!.contentSize.height - thumbScrollView!.bounds.size.height
+		if targetHeight < 0 {
+			targetHeight = 0
+		}
+		var sourceHeight: CGFloat = self.scrollView.contentSize.height - self.scrollView.bounds.size.height
+		if sourceHeight < 0 {
+			sourceHeight = 0
+		}
+		var contentY: CGFloat = 0
+		if targetHeight > 0 && sourceHeight > 0 {
+			let ry: CGFloat = thumbScrollView!.contentOffset.y / targetHeight
+			contentY = (1 - ry) * sourceHeight
+		}
+		if contentY != self.scrollView.contentOffset.y {
+			sourceContentOffsetUpdatesCount += 1
+			self.scrollView.contentOffset = CGPointMake(0, contentY)
+		}
 	}
 	
 	func updateThumbImagePosition() {
-		
+		var targetHeight: CGFloat = thumbScrollView!.bounds.size.height - thumbImageView!.image!.size.height
+		if targetHeight < 0 {
+			targetHeight = 0
+		}
+		var sourceHeight: CGFloat = self.scrollView.contentSize.height - self.scrollView.bounds.size.height
+		if sourceHeight < 0 {
+			sourceHeight = 0
+		}
+		var thumbY: CGFloat = 0
+		if targetHeight > 0 && sourceHeight > 0 {
+			var ry: CGFloat = self.scrollView.contentOffset.y / sourceHeight
+			if ry < 0 {
+				ry = 0
+			}
+			else if ry > 1 {
+				ry = 1
+			}
+			thumbY = ry * targetHeight
+		}
+		var r = thumbImageView!.frame
+		r.origin.y = CGFloat(roundf(Float(thumbY)))
+		thumbImageView!.frame = r
 	}
 	
 	public func scrollViewDidScroll(scrollView: UIScrollView) {
