@@ -18,6 +18,7 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 	
 	private var thumbImageView: UIImageView?
 	private var thumbScrollView: UIScrollView?
+	private var lineBackgroundView: UIView?
 	private var sourceContentOffsetUpdatesCount = 0
 	private var thumbContentOffsetUpdatesCount = 0
 	private var thumbHeight = 0
@@ -44,6 +45,14 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 		
 		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider"))
 		thumbImageView?.contentMode = .Center
+		
+		lineBackgroundView = UIView(frame: CGRectMake(0, 0, thumbImageView!.image!.size.width * 0.8, self.bounds.size.height))
+		lineBackgroundView?.center = CGPointMake(self.bounds.size.width * 0.5 - (lineBackgroundView?.frame.size.width)! * 0.5, self.bounds.size.height * 0.5)
+		lineBackgroundView?.backgroundColor = UIColor.darkGrayColor()
+		lineBackgroundView?.layer.cornerRadius = 3.0
+		lineBackgroundView?.layer.borderWidth = 1.0
+		
+		addSubview(lineBackgroundView!)
 		addSubview(thumbImageView!)
 		
 		thumbScrollView = UIScrollView(frame: self.bounds)
@@ -63,6 +72,14 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 		super.layoutSubviews()
 		
 		thumbScrollView!.frame = self.bounds
+		
+		let sliderWidth = thumbImageView!.image!.size.width * 0.8
+		var bounds = self.bounds
+		bounds.size.width = sliderWidth
+		lineBackgroundView!.frame = bounds
+		var center = lineBackgroundView?.center
+		center?.x = self.bounds.size.width * 0.5
+		lineBackgroundView!.center = center!
 		
 		updateContentSize()
 		updateContentOffset()
