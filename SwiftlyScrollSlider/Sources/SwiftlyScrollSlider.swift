@@ -36,8 +36,7 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 	}
 	
 	func setupView() {
-		
-		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider.png"))
+		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider.png", inBundle: NSBundle(forClass:self.classForCoder), compatibleWithTraitCollection: nil))
 		thumbImageView?.contentMode = .Center
 		
 		lineBackgroundView = UIView(frame: CGRectMake(0, 0, thumbImageView!.image!.size.width * 0.8, self.bounds.size.height))
