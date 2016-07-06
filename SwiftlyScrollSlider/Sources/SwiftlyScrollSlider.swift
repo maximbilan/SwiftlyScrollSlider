@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
+public class SwiftlyScrollSlider: UIView {
 	
 	@IBOutlet weak var scrollView: UIScrollView! {
 		didSet {
@@ -172,6 +172,10 @@ public class SwiftlyScrollSlider: UIView, UIScrollViewDelegate {
 		r.origin.y = CGFloat(roundf(Float(thumbY)))
 		thumbImageView!.frame = r
 	}
+	
+}
+
+extension SwiftlyScrollSlider: UIScrollViewDelegate {
 	
 	public func scrollViewDidScroll(scrollView: UIScrollView) {
 		if self.scrollView == scrollView {
