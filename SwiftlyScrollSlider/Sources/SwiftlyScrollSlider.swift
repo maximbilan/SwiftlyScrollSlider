@@ -10,19 +10,27 @@ import UIKit
 
 public class SwiftlyScrollSlider: UIView {
 	
+	// MARK: - Outlers
+	
 	@IBOutlet weak var scrollView: UIScrollView! {
 		didSet {
 			scrollViewContentDidChange()
 		}
 	}
 	
+	// MARK: - Public properties
+	
 	public var thumbImageView: UIImageView?
 	public var lineBackgroundView: UIView?
+	
+	// MARK: - Private properties
 	
 	private var thumbScrollView: UIScrollView?
 	private var sourceContentOffsetUpdatesCount = 0
 	private var thumbContentOffsetUpdatesCount = 0
 	private var thumbHeight = 0
+	
+	// MARK: - Initialization
 	
 	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
@@ -35,6 +43,8 @@ public class SwiftlyScrollSlider: UIView {
 		
 		setupView()
 	}
+	
+	// MARK: - Setup View
 	
 	func setupView() {
 		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider.png", inBundle: NSBundle(forClass:self.classForCoder), compatibleWithTraitCollection: nil))
@@ -62,6 +72,8 @@ public class SwiftlyScrollSlider: UIView {
 		updateContentSize()
 	}
 	
+	// MARK: - Layout Subviews
+	
 	public override func layoutSubviews() {
 		super.layoutSubviews()
 		
@@ -80,7 +92,10 @@ public class SwiftlyScrollSlider: UIView {
 		
 		thumbImageView!.frame = CGRectMake(0, 0, self.bounds.size.width, thumbImageView!.image!.size.height)
 		updateThumbImagePosition()
+	
 	}
+	
+	// MARK: - Scroll view change event
 	
 	func scrollViewContentDidChange() {
 		sourceContentOffsetUpdatesCount = 0
@@ -90,6 +105,8 @@ public class SwiftlyScrollSlider: UIView {
 		updateContentOffset()
 		updateThumbImagePosition()
 	}
+	
+	// MARK: - Logic
 	
 	func updateContentSize() {
 		var contentHeight: CGFloat = 0
