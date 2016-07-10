@@ -22,6 +22,7 @@ public class SwiftlyScrollSlider: UIView {
 	
 	public var thumbImageView: UIImageView?
 	public var lineBackgroundView: UIView?
+	public var lineBackgroundWidth: CGFloat = 0.5
 	
 	// MARK: - Private properties
 	
@@ -50,7 +51,7 @@ public class SwiftlyScrollSlider: UIView {
 		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider.png", inBundle: NSBundle(forClass:self.classForCoder), compatibleWithTraitCollection: nil))
 		thumbImageView?.contentMode = .Center
 		
-		lineBackgroundView = UIView(frame: CGRectMake(0, 0, thumbImageView!.image!.size.width * 0.8, self.bounds.size.height))
+		lineBackgroundView = UIView(frame: CGRectMake(0, 0, thumbImageView!.image!.size.width * lineBackgroundWidth, self.bounds.size.height))
 		lineBackgroundView?.center = CGPointMake(self.bounds.size.width * 0.5 - (lineBackgroundView?.frame.size.width)! * 0.5, self.bounds.size.height * 0.5)
 		lineBackgroundView?.backgroundColor = UIColor.darkGrayColor()
 		lineBackgroundView?.layer.cornerRadius = 3.0
@@ -79,7 +80,7 @@ public class SwiftlyScrollSlider: UIView {
 		
 		thumbScrollView!.frame = self.bounds
 		
-		let sliderWidth = thumbImageView!.image!.size.width * 0.8
+		let sliderWidth = thumbImageView!.image!.size.width * lineBackgroundWidth
 		var bounds = self.bounds
 		bounds.size.width = sliderWidth
 		lineBackgroundView!.frame = bounds
