@@ -14,7 +14,6 @@
 		94128C7F1D0BDFA000FA7BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94128C7D1D0BDFA000FA7BB9 /* LaunchScreen.storyboard */; };
 		94128C881D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94128C871D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift */; };
 		94128C8D1D0C693500FA7BB9 /* ScrollSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = 94128C8C1D0C693500FA7BB9 /* ScrollSlider.png */; };
-		94128C8F1D0C694400FA7BB9 /* ScrollSliderCustom.png in Resources */ = {isa = PBXBuildFile; fileRef = 94128C8E1D0C694400FA7BB9 /* ScrollSliderCustom.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		94128C801D0BDFA000FA7BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94128C871D0BE02E00FA7BB9 /* SwiftlyScrollSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftlyScrollSlider.swift; sourceTree = "<group>"; };
 		94128C8C1D0C693500FA7BB9 /* ScrollSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScrollSlider.png; sourceTree = "<group>"; };
-		94128C8E1D0C694400FA7BB9 /* ScrollSliderCustom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScrollSliderCustom.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				94128C781D0BDFA000FA7BB9 /* Main.storyboard */,
 				94128C7B1D0BDFA000FA7BB9 /* Assets.xcassets */,
 				94128C7D1D0BDFA000FA7BB9 /* LaunchScreen.storyboard */,
-				94128C8E1D0C694400FA7BB9 /* ScrollSliderCustom.png */,
 				94128C801D0BDFA000FA7BB9 /* Info.plist */,
 			);
 			path = SwiftlyScrollSlider;
@@ -148,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				94128C7F1D0BDFA000FA7BB9 /* LaunchScreen.storyboard in Resources */,
-				94128C8F1D0C694400FA7BB9 /* ScrollSliderCustom.png in Resources */,
 				94128C8D1D0C693500FA7BB9 /* ScrollSlider.png in Resources */,
 				94128C7C1D0BDFA000FA7BB9 /* Assets.xcassets in Resources */,
 				94128C7A1D0BDFA000FA7BB9 /* Main.storyboard in Resources */,

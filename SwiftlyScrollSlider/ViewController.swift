@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		scrollSlider.thumbImageView?.image = UIImage(named: "ScrollSliderCustom.png")
+		//scrollSlider.thumbImageView?.image = UIImage(named: "ScrollSliderCustom.png")
 		//scrollSlider.lineBackgroundView?.backgroundColor = UIColor.yellowColor()
 		//scrollSlider.lineBackgroundView?.layer.borderColor = UIColor.yellowColor().CGColor
 	}
