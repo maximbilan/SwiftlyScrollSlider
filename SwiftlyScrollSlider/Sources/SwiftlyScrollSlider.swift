@@ -10,7 +10,7 @@ import UIKit
 
 public class SwiftlyScrollSlider: UIView {
 	
-	// MARK: - Outlers
+	// MARK: - Outlets
 	
 	@IBOutlet weak var scrollView: UIScrollView! {
 		didSet {
