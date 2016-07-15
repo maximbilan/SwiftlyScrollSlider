@@ -49,10 +49,14 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="d0Z-G2-Zat" secondAttribute="trailing" constant="5" id="1f2-Pp-iT7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S4q-uD-8xs" secondAttribute="bottom" id="1fG-6r-nMh"/>
-                            <constraint firstItem="d0Z-G2-Zat" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="4kx-mu-G2Z"/>
+                            <constraint firstItem="d0Z-G2-Zat" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="4kx-mu-G2Z">
+                                <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                            </constraint>
                             <constraint firstItem="S4q-uD-8xs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="14:15" id="73e-zd-alf"/>
                             <constraint firstItem="S4q-uD-8xs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fIw-Um-PIM"/>
-                            <constraint firstItem="S4q-uD-8xs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mJ0-UV-Jru"/>
+                            <constraint firstItem="S4q-uD-8xs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mJ0-UV-Jru">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="d0Z-G2-Zat" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:15" id="mXA-VV-eFs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d0Z-G2-Zat" secondAttribute="bottom" constant="8" id="r39-Og-U5G"/>
                         </constraints>
