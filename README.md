@@ -16,6 +16,10 @@ Just copy the <i>SwiftlyScrollSlider.swift</i> into your project.
 
 ## Using
 
+![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/2.png)
+
+![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/3.png)
+
 You can easily found example in this repository.
 
 ## License
