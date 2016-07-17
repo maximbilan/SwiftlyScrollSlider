@@ -20,7 +20,7 @@ Using is really simple. Please create for example <i>UITextView</i> and <i>UIVie
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/2.png)
 
-And delegate of UITextView should be SwiftlyScrollSlider.
+And delegate of <i>UITextView</i> should be <i>SwiftlyScrollSlider</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/3.png)
 
