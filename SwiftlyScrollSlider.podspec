@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 s.name         = "SwiftlyScrollSlider"
-s.version      = "0.2"
+s.version      = "0.2.3"
 s.summary      = "Swiftly Scroll Slider"
 s.description  = "Swiftly Scroll Slider - a custom slider to UIScrollView"
 s.homepage     = "https://github.com/maximbilan/SwiftlyScrollSlider"
 s.license      = { :type => "MIT" }
 s.author       = { "Maxim Bilan" => "maximb.mail@gmail.com" }
 s.platform     = :ios, "8.0"
-s.source       = { :git => "https://github.com/maximbilan/SwiftlyScrollSlider.git", :tag => "0.2" }
+s.source       = { :git => "https://github.com/maximbilan/SwiftlyScrollSlider.git", :tag => "0.2.3" }
 s.source_files = "Classes", "SwiftlyScrollSlider/Sources/**/*.{swift}"
 s.resources	   = "SwiftlyScrollSlider/Assets/*.*"
 s.requires_arc = true
