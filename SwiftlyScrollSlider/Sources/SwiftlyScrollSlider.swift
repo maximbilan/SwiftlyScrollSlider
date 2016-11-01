@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SwiftlyScrollSlider: UIView {
+open class SwiftlyScrollSlider: UIView {
 	
 	// MARK: - Outlets
 	
@@ -20,16 +20,16 @@ public class SwiftlyScrollSlider: UIView {
 	
 	// MARK: - Public properties
 	
-	public var thumbImageView: UIImageView?
-	public var lineBackgroundView: UIView?
-	public var lineBackgroundWidth: CGFloat = 0.5
+	open var thumbImageView: UIImageView?
+	open var lineBackgroundView: UIView?
+	open var lineBackgroundWidth: CGFloat = 0.5
 	
 	// MARK: - Private properties
 	
-	private var thumbScrollView: UIScrollView?
-	private var sourceContentOffsetUpdatesCount = 0
-	private var thumbContentOffsetUpdatesCount = 0
-	private var thumbHeight = 0
+	fileprivate var thumbScrollView: UIScrollView?
+	fileprivate var sourceContentOffsetUpdatesCount = 0
+	fileprivate var thumbContentOffsetUpdatesCount = 0
+	fileprivate var thumbHeight = 0
 	
 	// MARK: - Initialization
 	
@@ -48,12 +48,12 @@ public class SwiftlyScrollSlider: UIView {
 	// MARK: - Setup View
 	
 	func setupView() {
-		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider.png", inBundle: NSBundle(forClass:self.classForCoder), compatibleWithTraitCollection: nil))
-		thumbImageView?.contentMode = .Center
+		thumbImageView = UIImageView(image: UIImage(named: "ScrollSlider.png", in: Bundle(for:self.classForCoder), compatibleWith: nil))
+		thumbImageView?.contentMode = .center
 		
-		lineBackgroundView = UIView(frame: CGRectMake(0, 0, thumbImageView!.image!.size.width * lineBackgroundWidth, self.bounds.size.height))
-		lineBackgroundView?.center = CGPointMake(self.bounds.size.width * 0.5 - (lineBackgroundView?.frame.size.width)! * 0.5, self.bounds.size.height * 0.5)
-		lineBackgroundView?.backgroundColor = UIColor.darkGrayColor()
+		lineBackgroundView = UIView(frame: CGRect(x: 0, y: 0, width: thumbImageView!.image!.size.width * lineBackgroundWidth, height: self.bounds.size.height))
+		lineBackgroundView?.center = CGPoint(x: self.bounds.size.width * 0.5 - (lineBackgroundView?.frame.size.width)! * 0.5, y: self.bounds.size.height * 0.5)
+		lineBackgroundView?.backgroundColor = UIColor.darkGray
 		lineBackgroundView?.layer.cornerRadius = 3.0
 		lineBackgroundView?.layer.borderWidth = 1.0
 		
@@ -63,11 +63,11 @@ public class SwiftlyScrollSlider: UIView {
 		thumbScrollView = UIScrollView(frame: self.bounds)
 		thumbScrollView?.bounces = false
 		thumbScrollView?.decelerationRate = 0
-		thumbScrollView?.indicatorStyle = .Black
+		thumbScrollView?.indicatorStyle = .black
 		thumbScrollView?.showsHorizontalScrollIndicator = false
 		thumbScrollView?.showsVerticalScrollIndicator = false
 		thumbScrollView?.delegate = self
-		thumbScrollView?.backgroundColor = UIColor.clearColor()
+		thumbScrollView?.backgroundColor = UIColor.clear
 		addSubview(thumbScrollView!)
 		
 		updateContentSize()
@@ -75,7 +75,7 @@ public class SwiftlyScrollSlider: UIView {
 	
 	// MARK: - Layout Subviews
 	
-	public override func layoutSubviews() {
+	open override func layoutSubviews() {
 		super.layoutSubviews()
 		
 		thumbScrollView!.frame = self.bounds
@@ -91,7 +91,7 @@ public class SwiftlyScrollSlider: UIView {
 		updateContentSize()
 		updateContentOffset()
 		
-		thumbImageView!.frame = CGRectMake(0, 0, self.bounds.size.width, thumbImageView!.image!.size.height)
+		thumbImageView!.frame = CGRect(x: 0, y: 0, width: self.bounds.size.width, height: thumbImageView!.image!.size.height)
 		updateThumbImagePosition()
 	
 	}
@@ -117,7 +117,7 @@ public class SwiftlyScrollSlider: UIView {
 		else {
 			contentHeight = self.bounds.size.height
 		}
-		thumbScrollView!.contentSize = CGSizeMake(self.bounds.size.width, CGFloat(roundf(Float(contentHeight))))
+		thumbScrollView!.contentSize = CGSize(width: self.bounds.size.width, height: CGFloat(roundf(Float(contentHeight))))
 	}
 
 	func updateContentOffset() {
@@ -142,7 +142,7 @@ public class SwiftlyScrollSlider: UIView {
 		}
 		if contentY != thumbScrollView!.contentOffset.y {
 			thumbContentOffsetUpdatesCount += 1
-			thumbScrollView!.contentOffset = CGPointMake(0, contentY)
+			thumbScrollView!.contentOffset = CGPoint(x: 0, y: contentY)
 		}
 	}
 	
@@ -162,7 +162,7 @@ public class SwiftlyScrollSlider: UIView {
 		}
 		if contentY != self.scrollView.contentOffset.y {
 			sourceContentOffsetUpdatesCount += 1
-			self.scrollView.contentOffset = CGPointMake(0, contentY)
+			self.scrollView.contentOffset = CGPoint(x: 0, y: contentY)
 		}
 	}
 	
@@ -195,7 +195,7 @@ public class SwiftlyScrollSlider: UIView {
 
 extension SwiftlyScrollSlider: UIScrollViewDelegate {
 	
-	public func scrollViewDidScroll(scrollView: UIScrollView) {
+	public func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		if self.scrollView == scrollView {
 			if (sourceContentOffsetUpdatesCount > 0) {
 				sourceContentOffsetUpdatesCount -= 1
