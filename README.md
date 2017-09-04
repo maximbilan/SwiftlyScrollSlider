@@ -7,14 +7,11 @@ Custom scroll slider for <i>UIScrollView</i>.
 ## Installation
 <b>CocoaPods</b>:
 <pre>
-Swift 2.2:
-pod 'SwiftlyScrollSlider', '~> 0.2'
-
-Swift 2.3:
-pod 'SwiftlyScrollSlider', '~> 0.2.3'
-
-Swift 3.0:
+<b>Swift 3.0</b>:
 pod 'SwiftlyScrollSlider', '~> 0.3.0'
+
+<b>Swift 4.0</b>:
+pod 'SwiftlyScrollSlider', '~> 0.4.0'
 </pre>
 <b>Manual</b>:
 <pre>
