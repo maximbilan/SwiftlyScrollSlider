@@ -1,5 +1,12 @@
 # SwiftlyScrollSlider
 
+[![Version](https://img.shields.io/cocoapods/v/SwiftlyScrollSlider.svg?style=flat)](http://cocoadocs.org/docsets/SwiftlyScrollSlider)
+[![License](https://img.shields.io/cocoapods/l/SwiftlyScrollSlider.svg?style=flat)](http://cocoadocs.org/docsets/SwiftlyScrollSlider)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftlyScrollSlider.svg?style=flat)](http://cocoadocs.org/docsets/SwiftlyScrollSlider)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/SwiftlyScrollSlider.svg)](https://cocoapods.org/pods/SwiftlyScrollSlider)
+[![CocoaPods](https://img.shields.io/cocoapods/dm/SwiftlyScrollSlider.svg)](https://cocoapods.org/pods/SwiftlyScrollSlider)
+
+
 Custom scroll slider for <i>UIScrollView</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/1.png)
@@ -20,7 +27,7 @@ Just copy the <i>SwiftlyScrollSlider.swift</i> into your project.
 
 ## Using
 
-Using is really simple. Please create for example <i>UITextView</i> and <i>UIView</i> for scroll slider in <i>Storyboard</i> or <i>XIB</i>, and set up class to <i>SwiftlyScrollSlider</i> for this <i>UIView</i>.
+Using is really simple. Please create for example <i>UITextView</i> and <i>UIView</i> for scroll slider in <i>Storyboard</i> or <i>XIB</i>, and set up a class to <i>SwiftlyScrollSlider</i> for this <i>UIView</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/2.png)
 
