@@ -23,11 +23,11 @@ Just copy the <i>SwiftlyScrollSlider.swift</i> into your project.
 
 ## Using
 
-Using is really simple. Please create for example <i>UITextView</i> and <i>UIView</i> for scroll slider in <i>Storyboard</i> or <i>XIB</i>, and set up a class to <i>SwiftlyScrollSlider</i> for this <i>UIView</i>.
+Using is really simple. Please create for the example <i>UITextView</i> and <i>UIView</i> for a scroll slider in <i>Storyboard</i> or <i>XIB</i>, and set up a class to <i>SwiftlyScrollSlider</i> for this <i>UIView</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/2.png)
 
-And delegate of <i>UITextView</i> should be <i>SwiftlyScrollSlider</i>.
+And the delegate of <i>UITextView</i> should be <i>SwiftlyScrollSlider</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/3.png)
 
