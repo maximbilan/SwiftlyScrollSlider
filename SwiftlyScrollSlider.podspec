@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "SwiftlyScrollSlider"
-s.version      = "0.4.0"
+s.version      = "0.4.1"
 s.summary      = "Swiftly Scroll Slider"
 s.description  = "Swiftly Scroll Slider - a custom slider to UIScrollView"
 s.homepage     = "https://github.com/maximbilan/SwiftlyScrollSlider"
