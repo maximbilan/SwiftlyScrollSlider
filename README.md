@@ -7,18 +7,14 @@
 [![CocoaPods](https://img.shields.io/cocoapods/dm/SwiftlyScrollSlider.svg)](https://cocoapods.org/pods/SwiftlyScrollSlider)
 
 
-Custom scroll slider for <i>UIScrollView</i>.
+A custom scroll slider for <i>UIScrollView</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/1.png)
 
 ## Installation
 <b>CocoaPods</b>:
 <pre>
-<b>Swift 3.0</b>:
-pod 'SwiftlyScrollSlider', '0.3.0'
-
-<b>Swift 4.0</b>:
-pod 'SwiftlyScrollSlider', '~> 0.4.0'
+pod 'SwiftlyScrollSlider'
 </pre>
 <b>Manual</b>:
 <pre>
