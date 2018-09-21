@@ -36,9 +36,9 @@ That's all.
 Examples of customization:
 
 <pre>
-scrollSlider.thumbImageView?.image = UIImage(named: "ScrollSliderCustom.png")       // Change image of scroll slider
-scrollSlider.lineBackgroundView?.backgroundColor = UIColor.yellowColor()            // Color of line
-scrollSlider.lineBackgroundView?.layer.borderColor = UIColor.yellowColor().CGColor  // Border of line color 
+scrollSlider.thumbImageView?.image = UIImage(named: "ScrollSliderCustom.png")       // Change an image of the scroll slider
+scrollSlider.lineBackgroundView?.backgroundColor = UIColor.yellowColor()            // A color of the line
+scrollSlider.lineBackgroundView?.layer.borderColor = UIColor.yellowColor().CGColor  // A border of the line color 
 </pre>
 
 You can easily found example in this repository.
