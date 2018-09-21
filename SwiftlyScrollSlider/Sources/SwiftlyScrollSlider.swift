@@ -62,7 +62,7 @@ open class SwiftlyScrollSlider: UIView {
 		
 		thumbScrollView = UIScrollView(frame: self.bounds)
 		thumbScrollView?.bounces = false
-		thumbScrollView?.decelerationRate = 0
+		thumbScrollView?.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0)
 		thumbScrollView?.indicatorStyle = .black
 		thumbScrollView?.showsHorizontalScrollIndicator = false
 		thumbScrollView?.showsVerticalScrollIndicator = false
