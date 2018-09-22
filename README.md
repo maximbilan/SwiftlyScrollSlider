@@ -23,7 +23,7 @@ Just copy the <i>SwiftlyScrollSlider.swift</i> into your project.
 
 ## Using
 
-Using is really simple. Please create for the example <i>UITextView</i> and <i>UIView</i> for a scroll slider in <i>Storyboard</i> or <i>XIB</i>, and set up a class to <i>SwiftlyScrollSlider</i> for this <i>UIView</i>.
+Using is really simple. Please create for the example <i>UITextView</i> and <i>UIView</i> for the scroll slider in <i>Storyboard</i> or <i>XIB</i>, and set up a class to <i>SwiftlyScrollSlider</i> for this <i>UIView</i>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftlyScrollSlider/master/img/2.png)
 
@@ -41,7 +41,7 @@ scrollSlider.lineBackgroundView?.backgroundColor = UIColor.yellowColor()        
 scrollSlider.lineBackgroundView?.layer.borderColor = UIColor.yellowColor().CGColor  // A border of the line color 
 </pre>
 
-You can easily found example in this repository.
+You can easily found the example in this repository.
 
 ## License
 
